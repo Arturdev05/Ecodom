@@ -1,0 +1,11 @@
+#navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #264059;
+    text-align: center;
+    z-index: 99;
+}
+#navbar img {
+    width: 100px;
+    height: 80px
+}
