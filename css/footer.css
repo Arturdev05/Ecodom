@@ -1,0 +1,25 @@
+
+footer {
+  background-color: #264059;
+  position: relative;
+  margin: auto;
+  margin-top: 800px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-size: 15px;
+  padding: 24px ;
+}
+footer img {
+  width: 100px;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer li {
+  color: #ffffff;
+  list-style: none;
+  display: inline-block;
+  padding-right: 20px;
+}
