@@ -1,0 +1,22 @@
+@import url(navbar.css);
+@import url(pagamento.css);
+@import url(icone.css);
+@import url(confirmacao.css);
+
+.inputs {
+    display: flex;
+    gap: 30px;
+    padding: 20vh 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#inputs {
+    width: 100%;
+}
+#links {
+    text-align: center;
+}
+h1, .btn {
+    color: #374957
+}

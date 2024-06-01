@@ -1,0 +1,26 @@
+#pagamento {
+    padding: 20vh 3%;
+    overflow: hidden;
+}
+#lados {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+}
+#esquerdo, #direito {
+    width: 50%;
+}
+#direito .form-control {
+    min-width: 10%;
+}
+#divisoria {
+    position: relative;
+    transform: rotate(180deg);
+    width: 3px;
+    min-height: 30rem;
+    background-color: #374957;
+}
+#pix-img {
+    width: 40px;
+}
