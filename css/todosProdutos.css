@@ -1,0 +1,15 @@
+
+.grid {
+  display: flex;
+  overflow-x: hidden;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 30px;
+  gap: 10px;
+}
+
+.grid img {
+  max-width: 100%;
+}
+
+
