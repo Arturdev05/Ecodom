@@ -1,0 +1,28 @@
+@media (max-width: 1900px) {
+    #lados {
+        flex-direction: row;
+        gap: 5%;
+    }
+    #divisoria {
+        height: 40rem;
+        transform: rotate(180deg);
+    }
+    #esquerdo, #direito {
+        width: 50%;
+    }
+}
+@media (max-width: 730px) {
+    h1 {
+        font-size: 195%;
+    }
+    #lados {
+        flex-direction: column;
+    }
+    #esquerdo, #direito {
+        width: 100%;
+    }
+    #divisoria {
+        transform: rotate(-90deg);
+        height: 20vh;
+    }
+}

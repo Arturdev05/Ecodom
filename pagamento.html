@@ -51,7 +51,7 @@
             <input type="text" class="form-control" aria-label="Default"
               aria-describedby="inputGroup-sizing-default">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Número:</span>
+              <span class="input-group-text" id="inputGroup-sizing-default">N°:</span>
             </div>
             <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
           </div>
@@ -71,47 +71,40 @@
             <img id="pix-img" src="img/icone/pagamento/pix.jpg" alt="Ícone Pix">
             Pague com pix
           </h3>
-          <img height="100px" width="300px" alt="QR-Code ECODOM"><br><br>
+          <img id="qr-code" src="img/qrCODE.jpeg" alt="QR-Code ECODOM"><br><br>
           <button type="button" class="btn btn-secondary">Copiar código pix</button>
         </div><br>
-        <div id="cartao">
-          <h4>Pague com cartão de crédito</h3><br>
-          <div class="input-group input-group-default mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Número cartão de crédito:</span>
-            </div>
-            <input type="email" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        <div>
+          <h5>Pague com cartão de crédito</h5><br>
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">N° cartão de crédito:</span>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
           </div>
-          <div class="input-group input-group-default mb-3">
+          <div id="inputs-grid">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">Vencimento:</span>
+              <input type="date" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default">
             </div>
-            <input type="date" class="form-control" aria-label="Default"
-              aria-describedby="inputGroup-sizing-default">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">Código de segurança:</span>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">Parcelas:</span>
+              <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
-            <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
           </div>
         </div>
       </div>
     </div>
-    </div>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="termos">
-      <label class="form-check-label" for="termos">Aceito os <a href="#">termos de uso</a></label>
-    </div>
-    <div id=pagamento-botoes>
-      <button id=pagamento-confirmar type="button" class="btn btn-success">Confirmar</button>
-      <button id="pagamento-cancelar" type="button" class="btn btn-secondary">Cancelar</button>
+    <div id=botoes>
+      <button id=confirmar type="button" class="btn btn-success">Confirmar</button>
+      <button id="cancelar" type="button" class="btn btn-secondary">Cancelar</button>
     </div>
   </main>
 
-  <script src="js/link.js"></script>
+  <script type=module src="js/link.js"></script>
 </body>
 
 </html>
