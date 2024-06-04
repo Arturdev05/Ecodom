@@ -23,6 +23,7 @@
     }
     #divisoria {
         transform: rotate(-90deg);
-        height: 20vh;
+        height: 25vh;
+        margin: 0px 50%;
     }
 }

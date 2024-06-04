@@ -1,6 +1,7 @@
+@import url(global.css);
 @import url(header-simples.css);
-@import url(pagamento.css);
 @import url(icone.css);
+@import url(pagamento.css);
 @import url(confirmacao.css);
 @import url(media.css);
 
