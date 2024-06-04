@@ -15,6 +15,15 @@ function ativarLink(link) {
 
 categorias.forEach(ativarLink);
 
+const botao = document.querySelector ('.menu-toggle');
+
+function mostrar () {
+  const categorias = document.querySelector('.categorias');
+  categorias.classList.toggle('ativar');
+}
+
+botao.addEventListener ('click', mostrar);
+
 function ajustarTamanhos() {
   
   const carrossel = document.getElementById("carouselExample");

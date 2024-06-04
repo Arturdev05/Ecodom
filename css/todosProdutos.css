@@ -52,12 +52,20 @@
   color: aliceblue;
   font-weight: bold;
   text-align: center;
+  transition-duration: 0.3s;
 }
 .verTodos i {
   font-size: 9rem;
   color: rgba(240, 248, 255, 0.76);
-
+  transition-duration: 0.3s;
 }
+
+.verTodos i:hover {
+  position: relative;
+  transform: translateX(10px);
+  
+}
+
 
 @media (max-width: 1000px) {
   .item {
@@ -120,5 +128,13 @@
   .item {
     flex: 1 1 calc(100% - 20px); /* Adjust for 1 image per row */
     max-width: calc(100% - 20px);
+  }
+
+  #item4 {
+    display: none;
+  }
+
+  #item3 {
+    display: none;
   }
 }
