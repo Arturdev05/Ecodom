@@ -17,21 +17,21 @@ export class LinkFuncoes {
             });
         }
         else if (document.querySelector('#nav-img')) {
-            this.addClick('#nav-img', 'index');
+            this.addClick('#nav-img', '../index');
         }
     }
     // Método para configurar eventos na tela de login
     configurarEventosLogin() {
-        this.addClick('#entrar', 'index');
-        this.addClick('#recuperar', 'recuperacao');
-        this.addClick('#cadastro', 'cadastro');
+        this.addClick('#entrar', '../index');
+        this.addClick('#recuperar', '../telaRecuperacao/recuperacao');
+        this.addClick('#cadastro', '../telaCadastro/cadastro');
     }
     // Método para configurar eventos na tela de cadastro
     configurarEventosCadastro() {
         document.querySelector('#confirmar').addEventListener('click', () => {
             if (document.querySelector("#termos").checked) {
                 window.alert("Usuário cadastrado.");
-                this.trocaTela('login');
+                this.trocaTela('../telaLogin/login');
             } else {
                 window.alert("Termos de uso não aceitos.");
             }
@@ -42,19 +42,19 @@ export class LinkFuncoes {
         document.querySelector("#enviar").addEventListener('click', () => {
             if (document.querySelector("#email").value) {
                 window.alert('Link de recuperação enviado para seu email.');
-                this.trocaTela('login');
+                this.trocaTela('../telaLogin/login');
             } else {
                 window.alert("Preencha o seu email.");
             }
         });
-        this.addClick("#cancelar", "login");
+        this.addClick("#cancelar", "../telaLogin/login");
     }
     // Método para configurar eventos na tela de pagamento
     configurarEventosPagamento() {
-        this.addClick('#confirmar', 'confirmacao');
+        this.addClick('#confirmar', '../telaConfirmacao/confirmacao');
     }
     // Método para configurar eventos na tela de confirmação
     configurarEventosConfirmacao() {
-        this.addClick('#finalizar', 'index');
+        this.addClick('#finalizar', '../index');
     }
 }
