@@ -1,15 +1,16 @@
-@import url(navbar.css);
+@import url(header-simples.css);
 @import url(pagamento.css);
 @import url(icone.css);
 @import url(confirmacao.css);
+@import url(media.css);
 
 .inputs {
     display: flex;
-    gap: 30px;
-    padding: 20vh 20%;
+    gap: 25px;
+    padding: 10rem 15%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 #inputs {
     width: 100%;
