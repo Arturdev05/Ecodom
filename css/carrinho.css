@@ -1,0 +1,32 @@
+#carrinho {
+    padding: 12rem 5%;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+section {
+    padding: 1%;
+    background-color: #FDF4F6;
+    height: auto;
+    border-radius: 4px;
+}
+#compras {
+    max-width: 80%;
+}
+#produto, #info-detalhes {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#button {
+    border: solid black 1.2px;
+    border-radius: 8px;
+    padding: 5px;
+
+    span {
+        padding: 4px;
+    }
+}
