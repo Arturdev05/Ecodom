@@ -3,6 +3,12 @@
   margin-top: 130px;
 }
 
+.carrossel img {
+ width: 1000px;
+  height: 500px;
+  object-fit: cover;
+}
+
 .subtitulo {
   position: absolute;
   z-index: 2;
@@ -17,25 +23,25 @@
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .subtitulo h2 {
   opacity: 90%;
   text-align: center;
-  font-size: 4vw;
+  max-width: 15ch;
+  font-size: 48px;
   font-weight: bold;
   color: #dfcd23;
 }
 .cozinha h2 {
-  color: #E5690B;
+  color: #e5690b;
   max-width: 12ch;
 }
 
 .sala h2 {
-  color: #1B6575;
+  color: #1b6575;
+  max-width: 20ch;
 }
-
 
 .gradient {
   background-color: #d9d9d9;
@@ -44,22 +50,43 @@
 
 .verProdutos a {
   font-weight: bold;
-  font-size: 1.5vw;
-  padding: 1vw;
+  font-size: 18px;
+  padding: 18px;
   border-radius: 60px;
   text-decoration: none;
   background-color: #dfcd23;
   color: #ffffff;
+  transition-duration: 0.3s;
+}
+.verProdutos a:hover {
+  background-color: #fff;
+  color: #dfcd23;
 }
 
 .cozinha a {
-  background-color: #E5690B;
+  background-color: #e5690b;
+}
+.cozinha a:hover {
+  background-color: #fff;
+  color: #e5690b;
 }
 .sala a {
-  background-color: #1B6575;
+  background-color: #1b6575;
+}
+.sala a:hover {
+  background-color: #fff;
+  color: #1b6575;
 }
 @media (max-width: 950px) {
   .carrossel {
     margin-top: 80px;
+  }
+  
+}
+
+@media (max-width: 620px) {
+  .verProdutos {
+    transition-duration: 0.1s;
+    transform: translateY(20px) translatex(-70px);   
   }
 }
