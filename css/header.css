@@ -30,6 +30,11 @@ header {
   position: relative;
   color: #ffffff;
   font-size: 30px;
+  transition-duration: 0.3s;
+}
+
+.navigation i:hover {
+  color: #aaa;
 }
 
 .search {
@@ -72,6 +77,14 @@ header {
   color: #ffffff;
   font-weight: 700;
   width: 50px;
+  transition-duration: 0.3s;
+}
+
+.categorias a:hover {
+  color: #264059;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 3px;
 }
 
 .menu-toggle {
@@ -81,6 +94,11 @@ header {
   color: #ffffff;
   font-size: 30px;
   cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.menu-toggle:hover {
+  color: #aaa;
 }
 
 @media (max-width: 950px) {
@@ -115,7 +133,7 @@ header {
   }
   .categorias.ativar {
     transform: translatex(0);
-    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ;
     display: block;
     opacity: 1;
   }
