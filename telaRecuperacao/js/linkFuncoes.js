@@ -26,18 +26,6 @@ export class LinkFuncoes {
         this.addClick('#recuperar', '../telaRecuperacao/recuperacao');
         this.addClick('#cadastro', '../telaCadastro/cadastro');
     }
-    // Método para configurar eventos na tela de cadastro
-    configurarEventosCadastro() {
-        document.querySelector('#confirmar').addEventListener('click', () => {
-            if (document.querySelector("#termos").checked) {
-                window.alert("Usuário cadastrado.");
-                this.trocaTela('../telaLogin/login');
-            } else {
-                window.alert("Termos de uso não aceitos.");
-            }
-        });
-    }
-    // Método para configurar eventos na tela de recuperação
     configurarEventosRecuperacao() {
         document.querySelector("#enviar").addEventListener('click', () => {
             if (document.querySelector("#email").value) {
@@ -48,13 +36,5 @@ export class LinkFuncoes {
             }
         });
         this.addClick("#cancelar", "../telaLogin/login");
-    }
-    // Método para configurar eventos na tela de pagamento
-    configurarEventosPagamento() {
-        this.addClick('#confirmar', '../telaConfirmacao/confirmacao');
-    }
-    // Método para configurar eventos na tela de confirmação
-    configurarEventosConfirmacao() {
-        this.addClick('#finalizar', '../index');
     }
 }

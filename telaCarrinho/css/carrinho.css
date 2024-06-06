@@ -1,0 +1,96 @@
+#carrinho {
+    padding: 12rem 3%;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+section {
+    padding: 1%;
+    background-color: #FDF4F6;
+    border-radius: 4px;
+}
+#compras, #resumo-compra {
+    h2, h3, h4, span {
+        padding: 5px;
+    }
+}
+#produto, #info-detalhes {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#pagamentos{
+    text-align: right;
+    span {
+        color: green;
+    }
+}
+#button {
+    border: solid black 1.2px;
+    border-radius: 8px;
+
+    #diminuir, #aumentar {
+        cursor: pointer;
+    }
+}
+.caixa-radio {
+    padding: 5px;
+    background-color: aliceblue;
+    border: solid black 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .radio-info {
+        position: relative;
+    }
+}
+#resumo-compra {
+    text-align: center;
+
+    button {
+        text-align: center;
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 1900px ) {
+    #button {
+        padding: 5px;
+
+        #diminuir, #aumentar {
+            padding: 4px;
+        }
+    }
+    #compras {
+        width: 65vw;
+    }    
+    .radio-info {
+        left: -15vw;
+    }
+}
+@media (max-width: 1080px ) {
+    #compras, #resumo-compra {
+        width: 100%;
+    }
+    .radio-info {
+        left: -25vw;
+    }
+}
+@media (max-width: 600px) {
+    .radio-info {
+        left: 0px;
+    }
+    #compras span, #button, #diminuir, #aumentar {
+        padding: 1px;
+    }
+}
