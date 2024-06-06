@@ -17,12 +17,12 @@ export class LinkFuncoes {
             });
         }
         else if (document.querySelector('#nav-img')) {
-            this.addClick('#nav-img', './index');
+            this.addClick('#nav-img', '../index');
         }
     }
     // Método para configurar eventos na tela de login
     configurarEventosLogin() {
-        this.addClick('#entrar', './index');
+        this.addClick('#entrar', '../index');
         this.addClick('#recuperar', '../telaRecuperacao/recuperacao');
         this.addClick('#cadastro', '../telaCadastro/cadastro');
     }
