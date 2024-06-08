@@ -47,5 +47,3 @@ function ajustarTamanhos() {
   // Ajusta os tamanhos ao redimensionar a janela
   
 }
-
-
