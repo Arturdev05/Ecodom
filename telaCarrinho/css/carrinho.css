@@ -1,5 +1,4 @@
 #carrinho {
-    padding: 12rem 3%;
     padding-bottom: 3rem;
     display: flex;
     flex-direction: row;
@@ -24,12 +23,17 @@ section {
     gap: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 }
 .row {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+}
+.row > * {
+    width: unset;
 }
 #pagamentos{
     text-align: right;
@@ -69,13 +73,22 @@ section {
     }
 }
 @media (max-width: 4000px ) {
-    body {
+    #produto-info {
+        max-width: 60%
+    }
+    #carrinho {
+        padding: 9rem 3%;
+    }
+    main {
         font-size: 150%;
+    }
+    .radio-info {
+        left: -10vw;
     }
 }
 @media (max-width: 1900px ) {
-    body {
-        font-size: 100%;
+    main {
+        font-size: 120%;
     }
     #button {
         text-align: center;
@@ -89,12 +102,12 @@ section {
         width: 60vw;
     }
     .radio-info {
-        left: -15vw;
+        left: -13vw;
     }
 }
 @media (max-width: 1300px ) {
-    body {
-        font-size: 90%;
+    #produto-img, #produto-info {
+        max-width: 45%
     }
     #compras {
         width: 50vw;
@@ -107,20 +120,32 @@ section {
         }
     }
     .radio-info {
-        left: -14vw;
+        left: 0px;
     }
 }
-@media (max-width: 900px ) {
+@media (max-width: 920px ) {
+    #produto-img, #produto-info {
+        max-width: 49%
+    }
+    #carrinho {
+        padding: 7rem 3%;
+    }
     #compras {
         width: 100vw;
     }
     .radio-info {
-        left: -7vw;
+        left: -11vw;
     }
 }
 @media (max-width: 600px) {
-    #compras {
-        font-size: 90%;
+    #produto, #info-detalhes {
+        justify-content: center;
+    }
+    #produto-img {
+        min-width: 100px
+    }
+    #produto-info {
+        min-width: 100%;
     }
     #compras span, #button, #diminuir, #aumentar {
         padding: 1px;
