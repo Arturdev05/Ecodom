@@ -1,9 +1,7 @@
-
-footer {
+ footer {
   background-color: #264059;
   position: relative;
   margin: auto;
-  margin-top: 800px;
   text-align: center;
   width: 100%;
   display: inline-block;
@@ -22,4 +20,4 @@ footer li {
   list-style: none;
   display: inline-block;
   padding-right: 20px;
-}
+} 

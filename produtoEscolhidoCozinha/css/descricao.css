@@ -1,0 +1,18 @@
+.descri{
+display: flex;
+justify-content: center;
+}
+
+.descricao {
+  max-width: 1320px;
+
+}
+
+
+.descricao ul {
+  padding: 0;
+}
+
+.descricao li {
+  margin-top: 10px;
+}
