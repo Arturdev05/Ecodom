@@ -1,16 +1,17 @@
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-items: center;
   background-color: #264059;
-  position: relative;
-  margin: auto;
-  text-align: center;
   width: 100%;
-  display: inline-block;
-  font-size: 15px;
-  padding: 24px ;
+  padding: 30px 70px 30px 70px;
+  
 }
 footer img {
-  width: 100px;
+  width: 120px;
 }
 footer a {
   text-decoration: none;
@@ -19,6 +20,36 @@ footer a {
 footer li {
   color: #ffffff;
   list-style: none;
-  display: inline-block;
-  padding-right: 20px;
+  
+}
+
+footer ul {
+  padding: 0;
+}
+.pagamentos img{
+width: 40px;
+}
+
+.logoEco {
+  text-align: center;
+}
+
+.ajuda {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.logoF {
+  position: relative;
+  right: 59px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.redeSociais {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
