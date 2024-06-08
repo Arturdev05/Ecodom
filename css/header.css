@@ -1,5 +1,5 @@
 header {
-  background-color: #264059;
+ 
   width: 100%;
   position: fixed;
   top: 0;
@@ -7,6 +7,7 @@ header {
   z-index: 99999;
 }
 .menu {
+  background-color: #264059;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,6 +31,11 @@ header {
   position: relative;
   color: #ffffff;
   font-size: 30px;
+  transition-duration: 0.3s;
+}
+
+.navigation i:hover {
+  color: #aaa;
 }
 
 .search {
@@ -59,19 +65,39 @@ header {
   color: #264059;
 }
 
-.categorias ul {
+.categorias {
   display: flex;
   justify-content: center;
-  gap: 2%;
+  justify-items: center;
+}
+.categorias ul {
+  position: relative;
+  width: 400px;
+  background-color: #264059;
+  display: flex;
+  justify-content: center;
+  gap: 4%;
   margin: 0px;
   margin-bottom: 10px;
+  border-radius: 0px 0px 10px 10px;
+  padding-left: 0;
+  padding-bottom: 10px;
 }
+
 
 .categorias a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
   width: 50px;
+  transition-duration: 0.3s;
+}
+
+.categorias a:hover {
+  color: #264059;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 3px;
 }
 
 .menu-toggle {
@@ -81,6 +107,11 @@ header {
   color: #ffffff;
   font-size: 30px;
   cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.menu-toggle:hover {
+  color: #aaa;
 }
 
 @media (max-width: 950px) {
@@ -115,7 +146,7 @@ header {
   }
   .categorias.ativar {
     transform: translatex(0);
-    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ;
     display: block;
     opacity: 1;
   }
