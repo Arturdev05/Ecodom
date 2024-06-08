@@ -148,6 +148,7 @@ font-weight: bold;
 @media (max-width: 768px) {
   .Painel {
     flex-direction: column;
+    padding: 15px;
    
   }
   
