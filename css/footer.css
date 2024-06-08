@@ -25,6 +25,7 @@ footer li {
 
 footer ul {
   padding: 0;
+  margin: 0;
 }
 .pagamentos img{
 width: 40px;
@@ -52,4 +53,27 @@ width: 40px;
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+@media (max-width: 780px) {
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .ajuda {
+    text-align: center;
+  }
+
+  .redeSociais {
+    text-align: center;
+  }
+  .logoF {
+    text-align: center;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
