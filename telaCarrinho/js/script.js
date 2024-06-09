@@ -23,7 +23,7 @@ aumentar.addEventListener('click', function() {
 function atualizaValorTotal(valorProduto) {
   var valorTotal = document.querySelectorAll(".total-valor");
   var valorFrete = parseFloat(document.querySelector("#resumo-frete").textContent);
-  document.querySelector("#resumo-quantidade").textContent = document.querySelector('#valor').textContent + " produtos";
+  document.querySelector("#resumo-quantidade").textContent = document.querySelector('#valor').textContent;
 
   valorTotal.forEach(element => {
     if (element.id == "pix") {
