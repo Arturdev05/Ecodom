@@ -1,0 +1,79 @@
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-items: center;
+  background-color: #264059;
+  width: 100%;
+  padding: 30px 140px 30px 140px;
+  
+}
+footer img {
+  width: 120px;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer li {
+  color: #ffffff;
+  list-style: none;
+  
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+.pagamentos img{
+width: 40px;
+}
+
+.logoEco {
+  text-align: center;
+}
+
+.ajuda {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.logoF {
+  position: relative;
+  right: 59px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.redeSociais {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (max-width: 780px) {
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .ajuda {
+    text-align: center;
+  }
+
+  .redeSociais {
+    text-align: center;
+  }
+  .logoF {
+    text-align: center;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
