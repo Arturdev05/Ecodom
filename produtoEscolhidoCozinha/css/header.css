@@ -1,5 +1,4 @@
- header {
- 
+header {
   width: 100%;
   position: fixed;
   top: 0;
@@ -109,16 +108,20 @@
   cursor: pointer;
   transition-duration: 0.3s;
 }
+.menu-toggle i{
+  color: #ffffff;
+  font-size: 30px;
+  background: none;
+}
 
 .menu-toggle:hover {
   color: #aaa;
 }
-
- @media (max-width: 768px) {
+@media (max-width: 950px) {
   .menu {
     padding: 10px 20px;
     gap: 15px;
-  } 
+  }
 
   .search {
     display: none;
@@ -131,7 +134,7 @@
   }
 
   .navigation {
-     display: none; 
+    /* display: none; */
     width: 100%;
     right: 100px;
   }
@@ -163,7 +166,12 @@
     right: 50px;
   }
   .logo img {
-    max-width: 100px;
+    max-width: 150px;
   }
 }
- 
+
+@media (max-width: 600px) {
+  .search .fa-magnifying-glass {
+    left: 92%;
+  }
+}
