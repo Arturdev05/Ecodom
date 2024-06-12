@@ -1,0 +1,137 @@
+.Painel {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 250px;
+  justify-content: center;
+}
+
+.produtoEscolhido {
+  display: flex;
+  flex-direction: column;
+}
+
+.principal,
+a {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin-bottom: 10px;
+  border: 1px solid #264059;
+}
+
+.miniaturas {
+  display: flex;
+   gap: 10px; 
+  padding: 15px;
+  justify-content: center;
+}
+
+.menorDestaque {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  border: 1px solid #264059;
+}
+.menorDestaque:hover {
+  border: 2px solid #264059;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.esposição {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: flex-start;
+  text-align: start;
+  margin: 0px;
+  flex-wrap: wrap;
+}
+
+.esposição h1 {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.esposição p {
+  margin-top: 0;
+  position: relative;
+}
+
+#gray {
+  color: #82868a;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.esposição h2 {
+  font-size: 45px;
+  margin: 0;
+}
+
+.botoes {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.btn-comprar {
+  width: 200px;
+  height: 45px;
+  border-radius: 24px;
+  background: #77e15c;
+  color: #ffffff;
+  align-items: center;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn-comprar:hover {
+  border: 2px solid #264059;
+  background-color: #ffffff;
+  color: #77e15c;
+}
+.btn-qty {
+  border: 3px solid black;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 110px;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 40px;
+}
+.btn-qty span {
+  margin: 0 10px;
+}
+.btn-qty button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 100%;
+  width: 200px;
+}
+.btn-qty button:hover {
+  background: #ddd;
+}
+
+@media (max-width: 768px) {
+  .Painel {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .esposição {
+    align-items: flex-start;
+    text-align: left;
+    margin: 0px;
+    flex-wrap: wrap;
+  }
+}
