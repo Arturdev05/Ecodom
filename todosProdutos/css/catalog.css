@@ -22,14 +22,14 @@
 
 .produto:hover {
   transform: scale(1.02);
-  box-shadow: 0px 1px 10px #264059;
+  box-shadow: 0px 1px 5px #264059;
 }
 
 .produto p {
   color:#264059;
   font-size: 20px;
   font-weight: bold;
-  padding: 10px 1px 1px 5px;
+  padding: 10px 1px 1px 10px;
   margin: 0;
 }
 
@@ -52,6 +52,52 @@
 .produto img {
   width: 100%;
 } 
+.cadeira img {
+  background: linear-gradient(
+    to top,
+    #dfe0e4,
+    #b8bdd1
+  ); 
+}
+
+.banco img{
+  background-color: #efe4d0;
+  background: linear-gradient(
+    to top,
+    #efe4d0,
+    #ddc496dc
+  ); 
+}
+.luminaria img {
+  background: linear-gradient(
+    to top,
+    #dfe0e4,
+    #b8bdd1
+  ); 
+}
+
+.dobravel img{
+  background-color: #efe4d0;
+  background: linear-gradient(
+    to top,
+    #efe4d0,
+    #ddc496dc
+  ); 
+}
+
+.bucha img {
+ 
+  background-color: #dfe0e4;
+}
+
+.saboneteira img{
+  background-color: #efe4d0;
+}
+.colher img {
+ 
+  background-color: #dfe0e4;
+}
+
 
 
 .grid {

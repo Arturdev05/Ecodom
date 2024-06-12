@@ -17,13 +17,12 @@
 .produto {
   background-color: white;
   width: 250px;
-  border: 1px solid #26405977;
   transition-duration: 0.3s;
 }
 
 .produto:hover {
   transform: scale(1.02);
-  box-shadow: 0px 1px 10px #264059;
+  box-shadow: 0px 1px 5px #264059;
 }
 
 .produto p {
@@ -41,29 +40,49 @@
   font-size: 25px;
   color: #264059;
   font-weight: bold;
-  padding: 1px 1px 1px 10px ;
+  padding: 1px 1px 1px 5px ;
   grid-column: 1;
 }
 
 .stars  {
   color: #DFCD23;
   grid-column: 1;
-  padding: 1px 1px 1px 10px ;
+  padding: 1px 1px 1px 5px ;
 }
 .produto img {
   width: 100%;
 } 
-.bucha img {
- 
-  background-color: #dfe0e4;
+.cadeira img {
+  background: linear-gradient(
+    to top,
+    #dfe0e4,
+    #b8bdd1
+  ); 
 }
 
-.saboneteira img{
+.banco img{
   background-color: #efe4d0;
+  background: linear-gradient(
+    to top,
+    #efe4d0,
+    #ddc496dc
+  ); 
 }
-.colher img {
- 
-  background-color: #dfe0e4;
+.luminaria img {
+  background: linear-gradient(
+    to top,
+    #dfe0e4,
+    #b8bdd1
+  ); 
+}
+
+.dobravel img{
+  background-color: #efe4d0;
+  background: linear-gradient(
+    to top,
+    #efe4d0,
+    #ddc496dc
+  ); 
 }
 
 
@@ -83,12 +102,9 @@
   align-items: center;
 }
 
-.Bambu {
-  position: relative;
-  top: 38px;
-}
 
 .carrinhoIcon {
+  color: #264059;
   text-align: end;
   padding-right: 10px;
   font-size: 30px;

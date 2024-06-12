@@ -17,7 +17,6 @@
 .produto {
   background-color: white;
   width: 250px;
-  border: 1px solid #26405977;
   transition-duration: 0.3s;
 }
 
@@ -30,7 +29,7 @@
   color:#264059;
   font-size: 20px;
   font-weight: bold;
-  padding: 10px 1px 1px 10px;
+  padding: 10px 1px 1px 5px;
   margin: 0;
 }
 
@@ -41,14 +40,14 @@
   font-size: 25px;
   color: #264059;
   font-weight: bold;
-  padding: 1px 1px 1px 10px ;
+  padding: 1px 1px 1px 5px ;
   grid-column: 1;
 }
 
 .stars  {
   color: #DFCD23;
   grid-column: 1;
-  padding: 1px 1px 1px 10px ;
+  padding: 1px 1px 1px 5px ;
 }
 .produto img {
   width: 100%;
@@ -89,6 +88,7 @@
 }
 
 .carrinhoIcon {
+  color: #264059;
   text-align: end;
   padding-right: 10px;
   font-size: 30px;
