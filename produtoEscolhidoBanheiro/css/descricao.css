@@ -1,0 +1,25 @@
+.descricoes{
+display: flex;
+justify-content: center;
+margin-top: 80px;
+}
+
+.descricao {
+  max-width: 1320px;
+
+}
+
+
+.descricao ul {
+  padding: 0;
+}
+
+.descricao li {
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+.descricoes{
+  padding: 15px;
+}
+
+}
