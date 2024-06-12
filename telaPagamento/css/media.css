@@ -1,22 +1,35 @@
-@media (max-width: 1900px) {
+@media (max-width: 4000px) {
+    main {
+        font-size: 30px;
+    }
     #lados {
         flex-direction: row;
         gap: 5%;
     }
     #divisoria {
-        height: 40rem;
+        height: 45rem;
         transform: rotate(180deg);
     }
     #esquerdo, #direito {
         width: 50%;
     }
 }
+@media screen and (max-width: 1900px) {
+    main {
+        font-size: 110%;
+    }
+    #divisoria {
+        height: 35rem;
+        transform: rotate(180deg);
+    }
+}
 @media (max-width: 730px) {
-    h1 {
+    h3 {
         font-size: 195%;
     }
     #lados {
         flex-direction: column;
+        gap: 0%;
     }
     #esquerdo, #direito {
         width: 100%;

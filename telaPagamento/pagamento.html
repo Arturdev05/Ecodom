@@ -19,79 +19,70 @@
   <main class="inputs" id="pagamento">
     <div id="lados">
       <div id="esquerdo">
-        <h1>Endereço</h1><br>
+        <h3>Endereço</h3><br>
         <div id=inputs>
-          <div class="input-group input-group-default mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Estado:</span>
+          <div class="grid-two">
+            <div class="grid">
+              <span>Estado:</span>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">CEP:</span>
+            <div class="grid">
+              <span>CEP:</span>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
+          </div>
+          <div class="box-inputs">
+            <span>Cidade:</span>
             <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
           </div>
-          <div class="input-group input-group-default mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Cidade:</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-          </div>
-          <div class="input-group input-group-default mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Bairro:</span>
-            </div>
+          <div class="box-inputs">
+            <span>Bairro:</span>
             <input type="text" class="form-control" aria-label="Default"
               aria-describedby="inputGroup-sizing-default">
           </div>
-          <div class="input-group input-group-default mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Rua:</span>
+          <div class="grid-two">
+            <div class="grid">
+              <span>Rua:</span>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
-            <input type="text" class="form-control" aria-label="Default"
-              aria-describedby="inputGroup-sizing-default">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">N°:</span>
+            <div class="grid">
+              <span>N°:</span>
+              <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
-            <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
           </div>
-        </div>
-        <div class="input-group input-group-default mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default">Referência:</span>
+          <div class="box-inputs">
+            <span>Referência:</span>
+            <input type="email" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
           </div>
-          <input type="email" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
         </div>
       </div>
       <hr id="divisoria">
       <div id="direito">
-        <h1>Pagamento</h1><br>
+        <h3>Pagamento</h3><br>
         <div id="pix">
-          <h3>
-            <img id="pix-img" src="./img/icone/pagamento/pix.jpg" alt="Ícone Pix">
-            Pague com pix
-          </h3>
+          <h5>
+            <img id="pix-img" src="./img/icone/pagamento/pix.png" alt="Ícone Pix">
+            <b>Pague com pix</b>
+          </h5>
           <img id="qr-code" src="./img/qrCODE.jpeg" alt="QR-Code ECODOM"><br><br>
-          <button type="button" class="blue-button"econdary">Copiar código pix</button>
+          <button type="button" class="blue-button">Copiar código pix</button>
         </div><br>
-        <div>
-          <h5>Pague com cartão de crédito</h5><br>
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default">N° cartão de crédito:</span>
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-          </div>
-          <div id="inputs-grid">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Vencimento:</span>
+        <h5><b>Pague com cartão de crédito</b></h5><br>
+        <div id="cartao-info">
+          <span>N° cartão de crédito:</span>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          <div class="grid-three">
+            <div>
+              <span>Vencimento:</span>
               <input type="date" class="form-control" aria-label="Default"
-                aria-describedby="inputGroup-sizing-default">
+              aria-describedby="inputGroup-sizing-default">
             </div>
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Código de segurança:</span>
+            <div>
+              <span>Código de segurança:</span>
               <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Parcelas:</span>
+            <div>
+              <span>Parcelas:</span>
               <input type="number" min=0 max="6" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
           </div>

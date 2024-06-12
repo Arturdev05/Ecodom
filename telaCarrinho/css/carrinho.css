@@ -1,36 +1,66 @@
-#carrinho {
-    padding-bottom: 3rem;
+#carrinho, #produto, #info-detalhes, #valores-info, .caixa-radio {
     display: flex;
+    align-items: center;
+}
+#carrinho {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
+    align-items: unset;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+    background-color: #EAE6E6;
 }
 section {
-    padding: 2%;
     background-color: #EDF4F6;
     border-radius: 4px;
+    color: #374957;
 }
 #compras, #resumo-compra {
     border-radius: 20px;
 
-    h2, h3, h4, span, b {
+    h3, h4, h5, b, span {
         color: #374957;
-        padding: 5px;
+        padding: 2px 0px;
     }
 }
 #produto, #info-detalhes {
     gap: 20px;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+}
+#valores-info {
+    flex-direction: column;
+    align-items: unset;
+    justify-content: center;
+
+    #parcela-info {
+        font-size: 14px;
+    }
+}
+.caixa-radio {
+    padding: 5px;
+    background-color: rgb(255, 250, 250);
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .radio-info {
+        position: relative;
+    }
+}
+#resumo-compra {
+    height: 1%;
+    text-align: center;
+
+    button {
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
 }
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
 }
 .row > * {
     width: unset;
@@ -43,52 +73,38 @@ section {
 }
 #button {
     border: solid black 1.2px;
-    border-radius: 8px;
+    border-radius: 20%;
 
     #diminuir, #aumentar {
         cursor: pointer;
     }
 }
-.caixa-radio {
-    padding: 5px;
-    background-color: whitesmoke;
-    border: solid black 1px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
-    .radio-info {
-        position: relative;
-    }
-}
-#resumo-compra {
-    height: 10%;
-    text-align: center;
-
-    button {
-        text-align: center;
-        padding: 5px 10px;
-        font-size: 15px;
-    }
-}
 @media (max-width: 4000px ) {
-    #produto-info {
-        max-width: 60%
-    }
-    #carrinho {
-        padding: 9rem 3%;
-    }
-    main {
-        font-size: 150%;
+    section {
+        padding: 2% 3%;
     }
     .radio-info {
         left: -10vw;
     }
 }
-@media (max-width: 1900px ) {
+@media (max-width: 1920px ) {
+    #produto-img, #produto-info {
+        max-width: 49%
+    }
     main {
-        font-size: 120%;
+        font-size: 130%;
+    }
+    #carrinho {
+        padding: 9rem 3%;
+    }
+    #produto-info {
+        max-width: 60%
+    }
+    #compras {
+        width: 60vw;
+    }
+    .radio-info {
+        left: -13vw;
     }
     #button {
         text-align: center;
@@ -98,19 +114,13 @@ section {
             padding: 3px;
         }
     }
-    #compras {
-        width: 60vw;
-    }
-    .radio-info {
-        left: -13vw;
-    }
 }
 @media (max-width: 1300px ) {
     #produto-img, #produto-info {
         max-width: 45%
     }
     #compras {
-        width: 50vw;
+        width: 55vw;
     }
     #button {
         padding: 3px;
@@ -124,30 +134,37 @@ section {
     }
 }
 @media (max-width: 920px ) {
-    #produto-img, #produto-info {
-        max-width: 49%
+    section {
+        padding: 2% 5%;
     }
     #carrinho {
+        gap: 30px;
         padding: 7rem 3%;
     }
     #compras {
         width: 100vw;
+    }
+    #produto-img, #produto-info {
+        max-width: 49%
     }
     .radio-info {
         left: -11vw;
     }
 }
 @media (max-width: 600px) {
+    #compras span, #button, #diminuir, #aumentar {
+        padding: 1px;
+    }
     #produto, #info-detalhes {
         justify-content: center;
     }
-    #produto-img {
+    #produto-img, #produto-info {
         min-width: 100px
     }
     #produto-info {
-        min-width: 100%;
+        max-width: 90%
     }
-    #compras span, #button, #diminuir, #aumentar {
-        padding: 1px;
+    .radio-info {
+        left: -3vw;
     }
 }

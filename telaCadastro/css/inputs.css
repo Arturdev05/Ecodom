@@ -1,17 +1,21 @@
 .inputs {
     display: flex;
-    gap: 25px;
-    padding: 10rem 15%;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    background-color: #EAE6E6;
+    gap: 30px;
+    padding: 10rem 15%;
 }
 #inputs {
-    width: 100%;
+    width: 90%;
 }
 #links {
     text-align: center;
 }
-h1 {
+h2, .btn, span {
     color: #374957
+}
+.box-inputs {
+    padding: 10px 0px;
+    text-align: left;
 }
