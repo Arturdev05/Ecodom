@@ -1,7 +1,7 @@
 var quantidade = document.querySelector('#valor');
 
 function atualizaValorCartao(valor) {
-  document.querySelector("#parcelas-cartao").textContent = parseInt(valor / 3);
+  document.querySelector("#parcelas-cartao").textContent = parseInt(valor / 2);
 }
 function atualizaValorTotal(valorTotalProduto) {
   var valorFrete = document.querySelector("#resumo-frete").textContent;
