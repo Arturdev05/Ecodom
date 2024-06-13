@@ -63,7 +63,16 @@
   justify-items: center;
   gap: 30px 0px;
 }
-
+.copos img {
+  background: linear-gradient(
+    to top,
+    #1b3a9e,
+    #758edd
+  ); 
+}
+.fa-cart-arrow-down {
+  color: green;
+}
 .product {
   display: grid;
   grid-template-columns: auto 1fr;

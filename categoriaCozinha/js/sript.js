@@ -24,6 +24,24 @@ function mostrar () {
 
 botao.addEventListener ('click', mostrar);
 
+document.addEventListener('DOMContentLoaded', function() {
+  const carrinhoIcons = document.querySelectorAll('.carrinhoIcon i');
+
+  carrinhoIcons.forEach(icon => {
+    icon.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      if (icon.classList.contains('fa-cart-plus')) {
+        icon.classList.remove('fa-cart-plus');
+        icon.classList.add('fa-cart-arrow-down');
+      } else {
+        icon.classList.remove('fa-cart-arrow-down');
+        icon.classList.add('fa-cart-plus');
+      }
+    });
+  });
+});
+
 function ajustarTamanhos() {
   
   const carrossel = document.getElementById("carouselExample");

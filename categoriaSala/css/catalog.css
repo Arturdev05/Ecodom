@@ -84,7 +84,9 @@
     #ddc496dc
   ); 
 }
-
+.fa-cart-arrow-down {
+  color: green;
+}
 
 .grid {
   /* display: flex;

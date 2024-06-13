@@ -65,6 +65,9 @@
   background-color: #dfe0e4;
 }
 
+.fa-cart-arrow-down {
+  color: green;
+}
 
 .grid {
   /* display: flex;

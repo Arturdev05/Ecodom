@@ -98,8 +98,16 @@
   background-color: #dfe0e4;
 }
 
-
-
+.fa-cart-arrow-down {
+  color: green;
+}
+.copos img {
+  background: linear-gradient(
+    to top,
+    #1b3a9e,
+    #758edd
+  ); 
+}
 .grid {
   /* display: flex;
   flex-wrap: wrap; */
