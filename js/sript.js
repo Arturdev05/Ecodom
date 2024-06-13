@@ -67,4 +67,40 @@ function ajustarTamanhos() {
   
 }
 
+function animateOnScroll() {
+  const todosProdutosSection = document.querySelector('.todosProdutos');
+  const maisVendidosSection = document.querySelector('.maisVendidos');
+
+  if (todosProdutosSection) {
+    todosProdutosSection.style.opacity = '0';
+    todosProdutosSection.style.transform = 'translateY(30px)';
+  }
+
+  if (maisVendidosSection) {
+    maisVendidosSection.style.opacity = '0';
+    maisVendidosSection.style.transform = 'translateY(30px)';
+  }
+
+  function checkVisibility() {
+    const todosProdutosTop = todosProdutosSection.getBoundingClientRect().top;
+    const maisVendidosTop = maisVendidosSection.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (todosProdutosTop < windowHeight * 0.75) {
+      todosProdutosSection.style.opacity = '1';
+      todosProdutosSection.style.transform = 'translateY(0)';
+    }
+
+    if (maisVendidosTop < windowHeight * 0.75) {
+      maisVendidosSection.style.opacity = '1';
+      maisVendidosSection.style.transform = 'translateY(0)';
+    }
+  }
+
+  checkVisibility();
+
+  window.addEventListener('scroll', checkVisibility);
+}
+
+animateOnScroll();
 
