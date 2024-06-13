@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   margin-top: 80px;
+  color: #264059;
 }
 
 .avaliacao {
@@ -31,11 +32,11 @@
   border-radius: 50%;
 }
 
-#star {
-  height: 20px;
-  max-width: 60px;
+.stars  {
+  color: #DFCD23;
+  grid-column: 1;
+  padding: 1px 1px 1px 5px ;
 }
-
 .profile {
   display: grid;
   grid-template-columns: 1fr;
