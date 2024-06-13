@@ -22,13 +22,23 @@ export class LinkFuncoes {
     }
     // Método para configurar eventos na tela de cadastro
     configurarEventosCadastro() {
-        document.querySelector('#confirmar').addEventListener('click', () => {
+        var button = document.querySelector('#confirmar');
+        button.addEventListener('click', () => {
+            var text = document.querySelector("#text-modal");
+
             if (document.querySelector("#termos").checked) {
-                window.alert("Usuário cadastrado.");
-                this.trocaTela('../telaLogin/login');
-            } else {
-                window.alert("Termos de uso não aceitos.");
+                button.setAttribute("data-bs-toggle", "modal");
+                button.setAttribute("data-bs-target", "#exampleModal");
+                button.click();
+
+                text.innerHTML = "Usuário cadastrado com sucesso!"
+
+                setTimeout(() => {
+                    if (document.querySelector("#exampleModal").style.display = "none") {
+                        this.trocaTela('../telaLogin/login')
+                    }
+                }, 2000);
             }
-        });
+        })
     }
 }

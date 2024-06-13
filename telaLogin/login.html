@@ -16,20 +16,26 @@
         </nav>
         <main class="inputs login">
             <h2>Login</h2>
-            <div class="box-inputs">
-                <span>E-mail:</span>
-                <input type="email" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-            </div>
-            <div class="box-inputs">
-                <span>Senha:</span>
-                <input type="password" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-            </div>
-            <button id="entrar" type="button" class="blue-button">Entrar</button>
-            <div id="links">
-                <span>Esqueceu sua senha?</span><button id=recuperar type="button" class="btn-link">Clique aqui</button><br>
-                <button id=cadastro type="button" class="btn-link">Registre-se</button>
-            </div>
+            <form id=formulario-login method="dialog">
+                <div class="box-inputs">
+                    <span>E-mail:</span>
+                    <input id="email" type="email" placeholder="www.seuemail@gmail.com" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+                </div>
+                <div class="box-inputs">
+                    <span>Senha:</span>
+                    <input id="senha" type="password" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+                </div>
+                <div id="links">
+                    <div class="box-inputs" id="enter">
+                        <button id="entrar" type="submit" class="blue-button">Entrar</button>
+                    </div>
+                    <span>Esqueceu sua senha?</span><button id=recuperar type="button" class="btn-link">Clique aqui</button><br>
+                    <button id=cadastro type="button" class="btn-link">Registre-se</button>
+                </div>
+            </form>
         </main>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
         <script type=module src="./js/link.js"></script>
     </body>

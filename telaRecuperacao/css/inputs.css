@@ -3,16 +3,24 @@
     flex-direction: column;
     align-items: center;
     background-color: #EAE6E6;
+    justify-content: center;
     gap: 30px;
     padding: 10rem 15%;
 }
-.box-inputs {
+form {
     width: 90%;
-    text-align: left;
 }
-#links {
+#links, #botoes, .box-inputs {
+    padding: 10px 0px;
+}
+.box-inputs {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0px;
+}
+#links, #botoes {
     text-align: center;
 }
-h2, .btn, span {
+h2, h5, p, .btn, span {
     color: #374957
 }

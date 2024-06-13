@@ -86,6 +86,9 @@ section {
     .radio-info {
         left: -10vw;
     }
+    #carrinho {
+        padding: 10rem 3%;
+    }
 }
 @media (max-width: 1920px ) {
     #produto-img, #produto-info {

@@ -6,14 +6,10 @@ const funcao = new LinkFuncoes();
 funcao.configurarEventosComuns();
 
 // Determinar a tela atual e configurar eventos específicos
-if (window.location.href.includes('login.html')) {
-    funcao.configurarEventosLogin();
-} else if (window.location.href.includes('cadastro.html')) {
-    funcao.configurarEventosCadastro();
-} else if (window.location.href.includes('recuperacao.html')) {
-    funcao.configurarEventosRecuperacao();
-} else if (window.location.href.includes('pagamento.html')) {
-    funcao.configurarEventosPagamento();
-} else if (window.location.href.includes('confirmacao.html')) {
-    funcao.configurarEventosConfirmacao();
-}
+funcao.configurarEventosPagamento();
+
+$(function() {
+    $('#cep').mask('00000-000');
+    $('#numCartao').mask('0000 0000 0000 0000');
+    $('#codSeg').mask('000');
+})

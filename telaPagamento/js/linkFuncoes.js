@@ -22,6 +22,21 @@ export class LinkFuncoes {
     }
     // Método para configurar eventos na tela de pagamento
     configurarEventosPagamento() {
-        this.addClick('#confirmar', '../telaConfirmacao/confirmacao');
+        $('#formulario-pagamento').on('submit', function(event) {
+            var allFieldsFilled = true;
+            $(this).find('input[required=true]').each(function() {
+                if ($(this).val() === '') {
+                    allFieldsFilled = false;
+                    return false; // Exit the loop early if any required field is empty
+                }
+            });
+        
+            if (!allFieldsFilled) {
+                event.preventDefault();
+                alert('Please fill out all required fields.');
+            } else {
+                window.location.href = '../telaConfirmacao/confirmacao.html';
+            }
+        });   
     }
 }

@@ -8,11 +8,12 @@
 }
 #inputs {
     width: 90%;
-}
-#links {
     text-align: center;
 }
-h2, .btn, span {
+#links, #check {
+    text-align: center;
+}
+h2, h5, .btn, span, p {
     color: #374957
 }
 .box-inputs {

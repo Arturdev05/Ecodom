@@ -22,7 +22,22 @@ export class LinkFuncoes {
     }
     // Método para configurar eventos na tela de login
     configurarEventosLogin() {
-        this.addClick('#entrar', '../index');
+        $('#formulario-login').on('submit', function(event) {
+            var allFieldsFilled = true;
+            $(this).find('input[required=true]').each(function() {
+                if ($(this).val() === '') {
+                    allFieldsFilled = false;
+                    return false; // Exit the loop early if any required field is empty
+                }
+            });
+        
+            if (!allFieldsFilled) {
+                event.preventDefault();
+                alert('Please fill out all required fields.');
+            } else {
+                window.location.href = '../index.html';
+            }
+        });  
         this.addClick('#recuperar', '../telaRecuperacao/recuperacao');
         this.addClick('#cadastro', '../telaCadastro/cadastro');
     }

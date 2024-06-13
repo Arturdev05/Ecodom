@@ -27,14 +27,34 @@ export class LinkFuncoes {
         this.addClick('#cadastro', '../telaCadastro/cadastro');
     }
     configurarEventosRecuperacao() {
-        document.querySelector("#enviar").addEventListener('click', () => {
-            if (document.querySelector("#email").value) {
-                window.alert('Link de recuperação enviado para seu email.');
-                this.trocaTela('../telaLogin/login');
+        var button = document.querySelector("#enviar");
+        
+        $('#formulario-recuperacao').on('submit', function(event) {
+            var allFieldsFilled = true;
+            $(this).find('input[required=true]').each(function() {
+                if ($(this).val() === '') {
+                    allFieldsFilled = false;
+                    return false; // Exit the loop early if any required field is empty
+                }
+            });
+        
+            if (!allFieldsFilled) {
+                event.preventDefault();
+                alert('Please fill out all required fields.');
             } else {
-                window.alert("Preencha o seu email.");
+                button.setAttribute("data-bs-toggle", "modal");
+                button.setAttribute("data-bs-target", "#exampleModal");
+                button.click();
+
+                document.querySelector("#text-modal").innerHTML = "Link de recuperação enviado para seu email!";
+
+                setTimeout(() => {
+                    if (document.querySelector("#exampleModal").style.display = "none") {
+                        window.location.href = '../telaLogin/login.html';
+                    }
+                }, 2000);
             }
-        });
+        });   
         this.addClick("#cancelar", "../telaLogin/login");
     }
 }

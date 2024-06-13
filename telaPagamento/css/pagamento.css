@@ -8,6 +8,10 @@
 #esquerdo h3, #direito {
     text-align: center;
 }
+#estado {
+    height: 55%;
+    width: 90%;
+}
 #divisoria {
     position: relative;
     width: 3px;

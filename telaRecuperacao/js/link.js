@@ -7,3 +7,7 @@ funcao.configurarEventosComuns();
 
 // Determinar a tela atual e configurar eventos específicos
 funcao.configurarEventosRecuperacao();
+
+$(function() {
+    $('#cpf').mask('000.000.000-00');
+})

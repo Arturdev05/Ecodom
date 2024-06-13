@@ -12,6 +12,12 @@
 #inputs {
     width: 100%;
 }
+form {
+    width: 100%;
+}
+#botoes {
+    text-align: center;
+}
 h3, h4, b, .btn, span {
     color: #374957
 }

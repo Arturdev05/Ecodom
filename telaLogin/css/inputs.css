@@ -6,11 +6,15 @@
     gap: 30px;
     background-color: #EAE6E6;
 }
-.box-inputs {
+form {
     width: 90%;
-    text-align: left;
 }
-#links {
+.box-inputs {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0px;
+}
+#links, #enter {
     text-align: center;
 }
 h2, .btn, span {
