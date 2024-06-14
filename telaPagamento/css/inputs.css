@@ -1,0 +1,23 @@
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAE6E6;
+    gap: 25px;
+}
+.box-inputs {
+    text-align: left;
+    padding: 18px 0px;
+}
+#inputs {
+    width: 100%;
+}
+form {
+    width: 100%;
+}
+#botoes {
+    text-align: center;
+}
+h3, h4, b, .btn, span {
+    color: #374957
+}

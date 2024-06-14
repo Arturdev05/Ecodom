@@ -1,0 +1,22 @@
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 15%;
+    gap: 30px;
+    background-color: #EAE6E6;
+}
+form {
+    width: 90%;
+}
+.box-inputs {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0px;
+}
+#links, #enter {
+    text-align: center;
+}
+h2, .btn, span {
+    color: #374957
+}

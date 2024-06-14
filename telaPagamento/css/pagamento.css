@@ -1,0 +1,42 @@
+#pagamento {
+    padding: 10rem 8%;
+}
+#lados {
+    display: flex;
+    width: 100%;
+}
+#esquerdo h3, #direito {
+    text-align: center;
+}
+#estado {
+    height: 55%;
+    width: 90%;
+}
+#divisoria {
+    position: relative;
+    width: 3px;
+    background-color: #374957;
+}
+#pix-img {
+    width: 30px;
+}
+#qr-code {
+    max-width: 10rem;
+}
+.grid-two, .grid-three {
+    display: grid;
+}
+.grid-two {
+    grid-template-columns: repeat(auto-fit, 47%);
+    gap: 6%;
+    padding: 18px 0px;
+}
+.grid-three {
+    grid-template-columns: repeat(auto-fit, 32%);
+    align-items: self-end;
+    gap: 2%;
+    overflow: hidden;
+}
+#cartao-info {
+    text-align: left;
+}

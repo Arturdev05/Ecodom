@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta id="" name="viewport" content="widspan=device-widspan, initial-scale=1.0">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />]
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <title>EcoDOM - Carrinho</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+
+      <div class="logo">
+        <a href="../index.html"><img src="./img/Logo.svg" alt="Logo"></a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Pesquise um produto"><i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="../telaLogin/login.html"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+
+    </div>
+    <div class="categorias">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../categoriaCozinha/cozinha.html">COZINHA</a></li>
+        <li><a href="../categoriaSala/sala.html">SALA</a></li>
+        <li><a href="../categoriaBanheiro/banheiro.html">BANHEIRO</a></li>
+      </ul>
+    </div>
+
+  </header>
+  <main id="carrinho">
+    <section id="compras">
+        <h2><b>Compras</b></h2>
+        <div id="produto">
+            <img id=produto-img src="./img/Talheres.png">
+            <div id="produto-info">
+                <h5><b>CONJUNTO DE TALHERES FIBRA DE TRIGO COLHER,
+                    GARFO E FACA</b></h5>
+                    <div id="info-detalhes">
+                        <div id="button">
+                            <span id="diminuir">-</span>
+                            <span id="valor">1</span>
+                            <span id="aumentar">+</span>
+                        </div>
+
+                        <p id=valores-info>
+                            <b>R$ <span id="produto-valor">14,90</span></b>
+                            <span id="parcela-info">ou <b>2x </b>de <b>7,45 </b>sem juros</span>
+                        </p>
+                        
+                    </div>
+            </div>
+        </div>
+        <h2><b>Frete</b></h2>
+        <h3>Recife - PE</h3>
+        <h4>Av. Mal. Mascarenhas de Morais, 3905<br>51150-003</h4>
+        <h3>Escolha a forma de envio:</h3>
+        <div class="caixa-radio">
+          <input class=input-frete type="radio" name="frete" value="12,50">
+          <span class="radio-info">
+            <span><b>Envio rápido:</b></span><br>
+            <span>Entrega em até: 3 dias</span>
+          </span>
+          <b>R$ <span class="frete-valor">12,50</span></span></b>
+        </div><br>
+        <div class="caixa-radio">
+          <input class=input-frete type="radio" name="frete" value="5,45">
+          <span class="radio-info">
+            <span><b>Envio normal:</b></span><br>
+            <span>Entrega em até: 7 dias</span>
+          </span>
+          <b>R$ <span class="frete-valor">05,45</span></b>
+        </div>  
+      </div>
+    </section>
+    <section id="resumo-compra">
+        <h4><b>Resumo da compra</b></h4>
+        <div id="resumo-info">
+          <div class=row>
+            <span><b><span id="resumo-quantidade">1</span> produto:</b></span>
+            <span>R$ <span id="resumo-valor"></span></span>
+          </div>
+          <div class=row>
+            <span><b>Frete:</b></span>
+            <span>R$ <span id="resumo-frete">5,45</span></span>
+          </div>
+          <hr>
+          <div class=row>
+            <span><b>Total:</b></span>
+            <span>R$ <span class="total-valor"></span></span>
+          </div>
+          <div id="pagamentos">
+            <span>10% OFF no Pix R$ <span id="pix" class="total-valor"></span></span><br>
+            <span>ou até 2x de R$ <span id="parcelas-cartao"></span> sem juros</span>
+          </div>
+        </div>
+        <button class="blue-button" id="continuar">Continuar</button>
+    </section>
+  </main>
+  <footer>
+
+    <ul class="ajuda">
+      <li><a href="">Contate-nos</a></li>
+      <li><a href="">Sobre nós</a></li>
+      <li><a href="">Pesquise em nossa loja</a></li>
+      <li><a href="">Termos e avisos de privacidade</a></li>
+      <li><a href="">Enviar feedback</a></li>
+    </ul>
+    <div class="logoF">
+
+      <div class="logoEco">
+        <img src="./img/Logo.svg" alt="">
+      </div>
+      <div class="pagamentos">
+        <img src="./img/footer/image 31.png" alt="">
+        <img src="./img/footer/image 32.png" alt="">
+        <img src="./img/footer/image 33.png" alt="">
+        <img src="./img/footer/image 34.png" alt="">
+      </div>
+    </div>
+    <ul class="redeSociais">
+      <li><i class="fa-brands fa-facebook"><span> Facebook</span></i></li>
+      <li><i class="fa-brands fa-whatsapp"></i><span> Whatsapp</span></li>
+      <li><i class="fa-brands fa-instagram"></i><span> Instagram</span></li>
+      <li><i class="fa-brands fa-youtube"></i><span> Youtube</span></li>
+      <li><i class="fa-brands fa-google"></i><span> Google +</span></li>
+    </ul>
+  </footer>
+  <script src="./js/sript.js"></script>
+  <script src="./js/carrinho.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>
