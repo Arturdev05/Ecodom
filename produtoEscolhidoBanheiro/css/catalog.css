@@ -62,15 +62,16 @@
 .produto img {
   width: 100%;
 } 
+.produto img{
+  background-color: #efe4d0;
+}
 .bucha img {
  
   background-color: #dfe0e4;
 }
 
-.sabonetes img{
-  background-color: #efe4d0;
-}
-.colher img {
+
+.escova img {
  
   background-color: #dfe0e4;
 }

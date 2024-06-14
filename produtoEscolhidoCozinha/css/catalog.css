@@ -62,17 +62,13 @@
 .produto img {
   width: 100%;
 } 
-.bucha img {
- 
-  background-color: #dfe0e4;
-}
 
-.sabonetes img{
-  background-color: #efe4d0;
-}
-.colher img {
- 
-  background-color: #dfe0e4;
+.copo img{
+  background: linear-gradient(
+    to top,
+    #1b3a9e,
+    #758edd
+  );
 }
 
 .fa-cart-arrow-down {

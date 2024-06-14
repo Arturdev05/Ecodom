@@ -54,17 +54,30 @@
 .produto img {
   width: 100%;
 } 
-.luminaria img {
+
+.banco img{
  
-  background-color: #dfe0e4;
+  background: linear-gradient(
+    to top,
+    #efe4d0,
+    #ddc496dc
+  ); 
 }
 
-.saboneteira img{
-  background-color: #efe4d0;
+.luminaria img {
+  background: linear-gradient(
+    to top,
+    #dfe0e4,
+    #b8bdd1
+  ); 
 }
-.mesa img {
- 
-  background-color: #dfe0e4;
+
+.dobravel img{
+  background: linear-gradient(
+    to top,
+    #efe4d0,
+    #ddc496dc
+  ); 
 }
 
 .fa-cart-arrow-down {
