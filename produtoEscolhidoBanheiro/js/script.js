@@ -55,10 +55,10 @@ function somar() {
     const span = document.querySelector(".btn-qty span");
     const total = Number(span.innerText) + 1;
 
-    if (total < 20) {
+    if (total <= 30) {
         span.innerText = total;
     } else {
-        alert("Impossível adicionar mais de 1000 itens");
+        reportError;
     }
 }
 function subtrair(){
@@ -94,3 +94,5 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+  

@@ -55,10 +55,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function somar() {
         let total = Number(span.innerText) + 1;
-        if (total <= 1000) {
+        if (total <= 30) {
             span.innerText = total;
         } else {
-            alert("Você não pode adicionar mais de 1000 itens.");
+           reportError;
         }
     }
 
