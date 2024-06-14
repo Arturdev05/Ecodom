@@ -78,7 +78,10 @@ a {
   gap: 40px;
   align-items: center;
 }
-
+.linkagem {
+  margin: 0;
+  
+}
 .btn-comprar {
   width: 200px;
   height: 45px;

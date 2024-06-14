@@ -11,6 +11,9 @@
   display: flex;
   flex-direction: column;
 }
+.linkagem {
+  margin: 0;
+}
 
 .principal,
 a {
