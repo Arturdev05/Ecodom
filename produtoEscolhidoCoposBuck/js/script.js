@@ -48,29 +48,30 @@ imagens.forEach(produtoEscolhidoClique);
 //JS do botão de quantidade -> soma e subtração
 
 
-const botaoMais = document.querySelector(".btn-qty .mais");
-const botaoMenos = document.querySelector(".btn-qty .menos");
-
-function somar() {
+document.addEventListener('DOMContentLoaded', function() {
+    const botaoMais = document.querySelector(".btn-qty .mais");
+    const botaoMenos = document.querySelector(".btn-qty .menos");
     const span = document.querySelector(".btn-qty span");
-    const total = Number(span.innerText) + 1;
 
-    if (total < 20) {
-        span.innerText = total;
-    } else {
-        alert("Impossível adicionar mais");
+    function somar() {
+        let total = Number(span.innerText) + 1;
+        if (total <= 1000) {
+            span.innerText = total;
+        } else {
+            alert("Você não pode adicionar mais de 1000 itens.");
+        }
     }
-}
-function subtrair(){
-    const span = document.querySelector(".btn-qty span");
-    const total = Number(span.innerText) - 1;
 
-    if (total >= 1) {
-        span.innerText = total;
-    } else {
-        alert("Impossível subtrair mais");
+    function subtrair() {
+        let total = Number(span.innerText) - 1;
+        if (total >= 0) {
+            span.innerText = total;
+        } else{
+            reportError;
+        }
     }
-}
 
-botaoMais.addEventListener("click", somar);
-botaoMenos.addEventListener("click", subtrair);
+    botaoMais.addEventListener("click", somar);
+    botaoMenos.addEventListener("click", subtrair);
+});
+

@@ -58,7 +58,7 @@ function somar() {
     if (total < 20) {
         span.innerText = total;
     } else {
-        alert("Impossível adicionar mais");
+        alert("Impossível adicionar mais de 1000 itens");
     }
 }
 function subtrair(){
@@ -68,10 +68,9 @@ function subtrair(){
     if (total >= 1) {
         span.innerText = total;
     } else {
-        alert("Impossível subtrair mais");
+       reportError;
     }
 }
 
 botaoMais.addEventListener("click", somar);
 botaoMenos.addEventListener("click", subtrair);
-
