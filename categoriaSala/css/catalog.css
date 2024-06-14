@@ -1,0 +1,114 @@
+.catalog h1 {
+  margin-top: 110px;
+  padding: 20px;
+  font-weight: bold;
+  color: #264059;
+}
+.fa-light {
+  position: relative;
+  z-index: 9999;
+  color: #264059;
+}
+
+.catalog {
+  padding: 50px;
+}
+
+.produto {
+  background-color: white;
+  width: 250px;
+  transition-duration: 0.3s;
+}
+
+.produto:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 1px 5px #264059;
+}
+
+.produto p {
+  color:#264059;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 1px 1px 10px;
+  margin: 0;
+}
+
+.produto a{
+  text-decoration: none;
+}
+.preco {
+  font-size: 25px;
+  color: #264059;
+  font-weight: bold;
+  padding: 1px 1px 1px 5px ;
+  grid-column: 1;
+}
+
+.stars  {
+  color: #DFCD23;
+  grid-column: 1;
+  padding: 1px 1px 1px 5px ;
+}
+.produto img {
+  width: 100%;
+} 
+.cadeira img {
+  background: linear-gradient(
+    to top,
+    #dfe0e4,
+    #b8bdd1
+  ); 
+}
+
+.banco img{
+  background-color: #efe4d0;
+  background: linear-gradient(
+    to top,
+    #efe4d0,
+    #ddc496dc
+  ); 
+}
+.luminaria img {
+  background: linear-gradient(
+    to top,
+    #dfe0e4,
+    #b8bdd1
+  ); 
+}
+
+.dobravel img{
+  background-color: #efe4d0;
+  background: linear-gradient(
+    to top,
+    #efe4d0,
+    #ddc496dc
+  ); 
+}
+.fa-cart-arrow-down {
+  color: green;
+}
+
+.grid {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat( 5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 30px 0px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+
+.carrinhoIcon {
+  color: #264059;
+  text-align: end;
+  padding-right: 10px;
+  font-size: 30px;
+}
+

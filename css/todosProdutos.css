@@ -1,0 +1,146 @@
+.todosProdutos {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  position: relative;
+  z-index: -999;
+}
+
+.item {
+  flex: 1 1 calc(20% - 20px); /* Adjust for 5 images with gaps */
+  max-width: calc(25% - 10px);
+}
+
+.item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.gradientItem {
+  background: linear-gradient(
+    to right,
+    #26405998,
+    #26405996
+  ); 
+}
+
+.verTodos {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+
+}
+
+.verTodos span {
+  font-size: 70px;
+  color: aliceblue;
+  font-weight: bold;
+  text-align: center;
+  transition-duration: 0.3s;
+}
+.verTodos i {
+  font-size: 9rem;
+  color: rgba(240, 248, 255, 0.76);
+  transition-duration: 0.3s;
+}
+
+.verTodos i:hover {
+  position: relative;
+  transform: translateX(10px);
+  
+}
+
+
+@media (max-width: 1000px) {
+  .item {
+    flex: 1 1 calc(25% - 20px); /* Adjust for 4 images per row */
+    max-width: calc(30% - 20px);
+  }
+  #item5 {
+    display: none;
+  }
+  .verTodos span {
+    font-size: 50px;
+  }
+  .verTodos i {
+    font-size: 6rem;
+  
+  }
+}
+
+@media (max-width: 800px) {
+  .item {
+    flex: 1 1 calc(33.33% - 20px); /* Adjust for 3 images per row */
+    max-width: calc(40.33% - 20px);
+  }
+  #item4 {
+    display: none;
+  }
+  .verTodos span {
+    font-size: 35px;
+  }
+  .verTodos i {
+    font-size: 6rem;
+  
+  }
+}
+
+@media (max-width: 600px) {
+  .item {
+    flex: 1 1 calc(50% - 20px); /* Adjust for 2 images per row */
+    max-width: calc(600% - 20px);
+  }
+  #item4 {
+    display: block;
+  }
+  .verTodos span {
+    font-size: 40px;
+  }
+  .verTodos i {
+    font-size: 6rem;
+  
+  }
+
+  .verTodos {
+    top: 45%;
+    left: 50%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .item {
+    flex: 1 1 calc(100% - 20px); /* Adjust for 1 image per row */
+    max-width: calc(100% - 20px);
+  }
+
+  #item4 {
+    display: none;
+  }
+
+  #item3 {
+    display: none;
+  }
+}
+
+.todosProdutos{
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}

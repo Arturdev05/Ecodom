@@ -1,0 +1,100 @@
+.carrossel {
+  position: relative;
+  margin-top: 110px;
+}
+
+.carrossel img {
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.subtitulo {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.verProdutos {
+  position: absolute;
+  z-index: 2;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subtitulo h2 {
+  text-align: center;
+  max-width: 15ch;
+  font-size: 50px;
+  font-weight: bold;
+  color: #dfcd23;
+}
+.cozinha h2 {
+  color: #e5690b;
+  max-width: 12ch;
+}
+
+.sala h2 {
+  color: #1b6575;
+  max-width: 20ch;
+}
+
+
+.gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(53, 53, 53, 0.555), 
+    rgba(61, 61, 61, 0.411)  
+  );
+}
+
+.verProdutos a {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px 18px 10px 18px;
+  border-radius: 60px;
+  text-decoration: none;
+  background-color: #dfcd23;
+  color: #ffffff;
+  transition-duration: 0.3s;
+}
+.verProdutos a:hover {
+  background-color: #fff;
+  color: #dfcd23;
+}
+
+.cozinha a {
+  background-color: #e5690b;
+}
+.cozinha a:hover {
+  background-color: #fff;
+  color: #e5690b;
+}
+.sala a {
+  background-color: #1b6575;
+}
+.sala a:hover {
+  background-color: #fff;
+  color: #1b6575;
+}
+@media (max-width: 950px) {
+  .carrossel {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 650px) {
+  .verProdutos {
+    
+    transform: translateY(20px) translatex(-95px);
+  }
+}
