@@ -1,0 +1,27 @@
+.descri{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  color: #264059;
+  }
+  
+  .descricao {
+    max-width: 1320px;
+  
+  }
+  
+  
+  .descricao ul {
+    padding: 0;
+  }
+  
+  .descricao li {
+    margin-top: 10px;
+  }
+  @media (max-width: 768px) {
+  .descri{
+    padding: 15px;
+  }
+  
+  }
+  
