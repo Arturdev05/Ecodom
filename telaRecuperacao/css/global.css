@@ -12,6 +12,7 @@
     border: solid 0.1px transparent;
     padding: 7px 35px;
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 .blue-button:hover {
