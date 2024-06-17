@@ -98,3 +98,15 @@
     transform: translateY(20px) translatex(-95px);
   }
 }
+
+@media (max-width: 400px) {
+  .verProdutos a {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 360px) {
+  .verProdutos a {
+    font-size: 23px;
+  }
+}
